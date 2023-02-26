@@ -1,119 +1,103 @@
-* {
+*,
+*:before,
+*:after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    outline: 0;
-    transition: all 0.5s ease;
 }
 
+
+/* Setting Background */
 body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: 100vh;
+    /* background: linear-gradient(180deg,
+            rgba(190, 162, 162, 0.5), 
+            rgb(4, 242, 222, 0.5)
+            ); */
+    background-image: url("https://i.pinimg.com/originals/8c/43/64/8c43645fe8d0ac164a6925448be32858.jpg");
+    margin-top: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-body {
-  background: linear-gradient(to right,  rgb(73, 80, 83), rgb(169, 163, 228) ,  rgb(74, 141, 180));
+.heading {
+    font-family: cursive;
+    align-content: center;
+    text-align: center;
+    padding: 13px;
+    background-color: rgba(52, 216, 162, 0.6);
+    margin: 15px 35% 15px 35%;
+    /* margin : top right bottom left;*/
+    width: auto;
+    border: 1px solid black;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top: none;
+    border-left: none;
+    border-radius: 50px;
+    box-shadow: 3px 7px 20px rgb(30, 5, 216);
 }
 
 .container {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    place-items: center;
+    text-align: center;
+    margin-top: 23px;
+}
+
+table {
+    margin: auto;
+}
+
+input {
+    font-size: 34px;
+    border-radius: 1px;
+    width: 350px;
+    padding: 7px;
+    margin-bottom: 15px;
+    border: 2px solid rgb(251, 5, 5);
+    border-radius: 100px;
+    box-shadow: 10px 10px 12px rgba(16, 8, 18, 0.572);
 
 }
 
-.calculator {
-    position: relative;
-    height: auto;
-    width: auto;
-    padding: 25px;
-    border: 2px solid yellow;
-    border-radius: 15%;
-}
-
-#display {
-    margin: 0 5px;
-    height: 150px;
-    width: auto;
-    max-width: 270px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: black;
-    padding-right: 5%;
-    overflow-x: scroll;
+input:hover {
     background-color: white;
-    border-radius: 15px;
-    border: 2px solid blue;
-  }
+    border: 2px solid rgb(222, 10, 85);
+    border-bottom: none;
+    border-right: none;
+}
 
-#display::-webkit-scrollbar {
-    display: block;
-    height: 3px;
+td {
+    padding-bottom: 10px;
 }
 
 button {
-    height: 60px;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(251, 243, 224);
     width: 60px;
-    border: 0;
-    border-radius: 30px;
-    margin: 5px;
-    font-size: 30px;
-    cursor: pointer;
-    transition: all 200ms ease;
+    height: 60px;
+    margin-right: 20px;
+    border: 2px solid rgb(228, 149, 235);
+    border-radius: 100px;
+    border-top: none;
+    border-left: none;
+    box-shadow: 5px 3px 7px rgba(12, 7, 14, 0.572);
 }
 
 button:hover {
-    transform: scale(1.1);
-}
-
-button#equal {
-    height: 130px;
-}
-  .calculator.dark {
-    background: linear-gradient(to right,  rgb(47, 51, 53), black ,  rgb(9, 26, 36));
-  }
-
-  .calculator.dark #display {
-    color: black;
-  }
-
-  .calculator.dark button#clear {
-    background-color: rgb(21, 255, 53);
-    color: black;
-    font-weight: bolder;
-    font-size: 30px;
-  }
-
-  .calculator.dark button.btn-number {
-    background-color: black;
-    color: white;
-    font-weight: bolder;
-    border-radius: 19%;
-    border: 2px solid blue;
-  }
-
-  .calculator.dark button.btn-operator {
-    background-color: #a5abf8;
-    color:black;
-    font-size: 30px;
-    border: 1px solid rgb(184, 184, 125);
-  }
-  
-  .calculator.dark button.btn-equal {
     background-color: white;
-    color: rgb(12, 6, 6);
-    font-weight: bold;
-    font-size:35px;
-  }
-  .text-center{
-      text-align: center;
-  }
+    border: 2px solid rgb(11, 136, 84);
+    border-bottom: none;
+    border-right: none;
+    transform: scale(1.05);
+}
+
+.calculator {
+    background: linear-gradient(100deg, rgb(219, 187, 215), rgb(219, 210, 180));
+    padding: 35px;
+    display: inline-block;
+    box-shadow: 17px 27px 30px 25px rgba(243, 227, 4, 0.572);
+    border: 3px solid rgb(27, 25, 25);
+    border-top: 1px solid rgb(27, 25, 25);
+    border-left: 1px solid rgb(27, 25, 25);
+    border-radius: 50px;
+}
